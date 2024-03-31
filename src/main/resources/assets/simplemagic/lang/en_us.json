@@ -1,3 +1,6 @@
 {
-  "item.simplemagic.ruby": "Ruby"
+  "item.simplemagic.ruby": "Ruby",
+  "item.simplemagic.raw_ruby": "Raw Ruby",
+
+  "creativetab.main_tab": "Main Tab"
 }

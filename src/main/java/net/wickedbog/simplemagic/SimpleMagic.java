@@ -12,6 +12,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.wickedbog.simplemagic.item.ModCreativeModeTabs;
 import net.wickedbog.simplemagic.item.ModItems;
 import org.slf4j.Logger;
 
@@ -23,6 +24,8 @@ public class SimpleMagic {
 
     public SimpleMagic() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
 
