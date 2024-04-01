@@ -47,7 +47,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "advancedmc:ruby"
+              "name": "advancedmc:raw_ruby"
             }
           ]
         }
