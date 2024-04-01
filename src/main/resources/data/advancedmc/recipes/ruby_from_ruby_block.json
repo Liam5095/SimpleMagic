@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "advancedmc:ruby_block"
+    }
+  ],
+  "result": {
+    "item": "advancedmc:ruby",
+    "count": 9
+  },
+  "group": "ruby"
+}
