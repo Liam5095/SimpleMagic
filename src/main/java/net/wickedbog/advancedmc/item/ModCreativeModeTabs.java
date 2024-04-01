@@ -21,9 +21,15 @@ public class ModCreativeModeTabs {
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.RUBY.get());
                         pOutput.accept(ModItems.RAW_RUBY.get());
+                        pOutput.accept(ModItems.MAGIC_WAND.get());
 
                         pOutput.accept(ModBlocks.RUBY_BLOCK.get());
                         pOutput.accept(ModBlocks.RUBY_ORE.get());
+
+                        pOutput.accept(ModItems.RUBY_HELMET.get());
+                        pOutput.accept(ModItems.RUBY_CHESTPLATE.get());
+                        pOutput.accept(ModItems.RUBY_LEGGINGS.get());
+                        pOutput.accept(ModItems.RUBY_BOOTS.get());
 
                         pOutput.accept(Blocks.TNT);
                     })

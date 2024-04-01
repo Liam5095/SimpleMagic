@@ -1,6 +1,10 @@
 {
   "item.advancedmc.ruby": "Ruby",
   "item.advancedmc.raw_ruby": "Raw Ruby",
+  "item.advancedmc.ruby_helmet": "Ruby Helmet",
+  "item.advancedmc.ruby_chestplate": "Ruby Chestplate",
+  "item.advancedmc.ruby_leggings": "Ruby Leggings",
+  "item.advancedmc.ruby_boots": "Ruby Boots",
 
   "block.advancedmc.ruby_block": "Block Of Ruby",
   "block.advancedmc.ruby_ore": "Ruby Ore",
