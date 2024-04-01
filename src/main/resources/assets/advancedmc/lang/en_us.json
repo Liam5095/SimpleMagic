@@ -1,8 +1,8 @@
 {
-  "item.simplemagic.ruby": "Ruby",
-  "item.simplemagic.raw_ruby": "Raw Ruby",
+  "item.advancedmc.ruby": "Ruby",
+  "item.advancedmc.raw_ruby": "Raw Ruby",
 
-  "block.simplemagic.ruby_block": "Block Of Ruby",
+  "block.advancedmc.ruby_block": "Block Of Ruby",
 
   "creativetab.main_tab": "Main Tab"
 }

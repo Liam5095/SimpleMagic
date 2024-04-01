@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "simplemagic:block/ruby_block"
+    "all": "advancedmc:block/ruby_block"
   }
 }

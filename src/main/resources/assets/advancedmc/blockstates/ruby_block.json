@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "simplemagic:block/ruby_block"
+      "model": "advancedmc:block/ruby_block"
     }
   }
 }
