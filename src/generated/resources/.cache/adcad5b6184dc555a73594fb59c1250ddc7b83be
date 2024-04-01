@@ -1,0 +1,9 @@
+// 1.20.1	2024-04-01T11:34:05.3785443	Tags for minecraft:block mod id advancedmc
+15981edb0a57d516da366a581276d760286b1e65 data/advancedmc/tags/blocks/metal_detector_valuables.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/forge/tags/blocks/needs_gold_tool.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/forge/tags/blocks/needs_netherite_tool.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/forge/tags/blocks/needs_wood_tool.json
+d23311d058cf154b7788d999d2fae36dd956886c data/minecraft/tags/blocks/mineable/pickaxe.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/needs_diamond_tool.json
+d23311d058cf154b7788d999d2fae36dd956886c data/minecraft/tags/blocks/needs_iron_tool.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/needs_stone_tool.json
