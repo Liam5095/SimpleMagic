@@ -1,0 +1,38 @@
+{
+  "criteria": {
+    "has_ruby": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "advancedmc:ruby"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "advancedmc:textures/block/ruby_ore.png",
+    "description": {
+      "text": "The power lies in the Ruby!"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "advancedmc:ruby"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Rubify"
+    }
+  },
+  "requirements": [
+    [
+      "has_ruby"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
