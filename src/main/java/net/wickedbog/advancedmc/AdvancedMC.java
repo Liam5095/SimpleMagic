@@ -1,4 +1,4 @@
-package net.wickedbog.simplemagic;
+package net.wickedbog.advancedmc;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -12,18 +12,18 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.wickedbog.simplemagic.block.ModBlocks;
-import net.wickedbog.simplemagic.item.ModCreativeModeTabs;
-import net.wickedbog.simplemagic.item.ModItems;
+import net.wickedbog.advancedmc.block.ModBlocks;
+import net.wickedbog.advancedmc.item.ModCreativeModeTabs;
+import net.wickedbog.advancedmc.item.ModItems;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(SimpleMagic.MOD_ID)
-public class SimpleMagic {
-    public static final String MOD_ID = "simplemagic";
+@Mod(AdvancedMC.MOD_ID)
+public class AdvancedMC {
+    public static final String MOD_ID = "advancedmc";
     public static final Logger LOGGER = LogUtils.getLogger();
 
-    public SimpleMagic() {
+    public AdvancedMC() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModCreativeModeTabs.register(modEventBus);

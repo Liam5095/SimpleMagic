@@ -1,15 +1,15 @@
-package net.wickedbog.simplemagic.item;
+package net.wickedbog.advancedmc.item;
 
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import net.wickedbog.simplemagic.SimpleMagic;
+import net.wickedbog.advancedmc.AdvancedMC;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
-            DeferredRegister.create(ForgeRegistries.ITEMS, SimpleMagic.MOD_ID);
+            DeferredRegister.create(ForgeRegistries.ITEMS, AdvancedMC.MOD_ID);
 
     public static final RegistryObject<Item> RUBY = ITEMS.register("ruby",
             () -> new Item(new Item.Properties()));

@@ -1,4 +1,4 @@
-package net.wickedbog.simplemagic.block;
+package net.wickedbog.advancedmc.block;
 
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -10,14 +10,14 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import net.wickedbog.simplemagic.SimpleMagic;
-import net.wickedbog.simplemagic.item.ModItems;
+import net.wickedbog.advancedmc.AdvancedMC;
+import net.wickedbog.advancedmc.item.ModItems;
 
 import java.util.function.Supplier;
 
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
-            DeferredRegister.create(ForgeRegistries.BLOCKS, SimpleMagic.MOD_ID);
+            DeferredRegister.create(ForgeRegistries.BLOCKS, AdvancedMC.MOD_ID);
 
     public static final RegistryObject<Block> RUBY_BLOCK = registerBlock("ruby_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.NETHERITE_BLOCK)));

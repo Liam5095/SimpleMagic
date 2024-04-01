@@ -1,4 +1,4 @@
-package net.wickedbog.simplemagic.item;
+package net.wickedbog.advancedmc.item;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -7,16 +7,13 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import net.wickedbog.simplemagic.SimpleMagic;
-import net.wickedbog.simplemagic.block.ModBlocks;
-
-import java.awt.*;
+import net.wickedbog.advancedmc.AdvancedMC;
+import net.wickedbog.advancedmc.block.ModBlocks;
 
 public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
-            DeferredRegister.create(Registries.CREATIVE_MODE_TAB, SimpleMagic.MOD_ID);
+            DeferredRegister.create(Registries.CREATIVE_MODE_TAB, AdvancedMC.MOD_ID);
 
     public static final RegistryObject<CreativeModeTab> MAIN_TAB = CREATIVE_MODE_TABS.register("main_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.RUBY.get()))
