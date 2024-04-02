@@ -1,0 +1,54 @@
+{
+  "parent": "advancedmc:advancedmc",
+  "criteria": {
+    "has_full_ruby_armor": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "advancedmc:ruby_helmet"
+            ]
+          },
+          {
+            "items": [
+              "advancedmc:ruby_chestplate"
+            ]
+          },
+          {
+            "items": [
+              "advancedmc:ruby_leggings"
+            ]
+          },
+          {
+            "items": [
+              "advancedmc:ruby_boots"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "Get a full set of ruby armor"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "advancedmc:ruby_chestplate",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Ruby-fashion"
+    }
+  },
+  "requirements": [
+    [
+      "has_full_ruby_armor"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

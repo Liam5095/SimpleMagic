@@ -25,5 +25,28 @@ public class ModAdvancementProvider implements ForgeAdvancementProvider.Advancem
                         true, true, false))
                 .addCriterion("has_ruby", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.RUBY.get()))
                 .save(saver, new ResourceLocation(AdvancedMC.MOD_ID, "advancedmc"), existingFileHelper);
+
+
+
+        Advancement Rubyfashion = Advancement.Builder.advancement()
+                .display(new DisplayInfo(new ItemStack(ModItems.RUBY_CHESTPLATE.get()),
+                        Component.literal("Ruby-fashion"), Component.literal("Get a full set of ruby armor"),
+                        null, FrameType.TASK,
+                        true, true, false))
+                .parent(rootAdvancement)
+                .addCriterion("has_full_ruby_armor", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.RUBY_HELMET.get(),
+                        ModItems.RUBY_CHESTPLATE.get(), ModItems.RUBY_LEGGINGS.get(), ModItems.RUBY_BOOTS.get()))
+                .save(saver, new ResourceLocation(AdvancedMC.MOD_ID, "ruby_fashion"), existingFileHelper);
+
+
+
+        Advancement AMagicalWand = Advancement.Builder.advancement()
+                .display(new DisplayInfo(new ItemStack(ModItems.MAGIC_WAND.get()),
+                        Component.literal("A Magical Wand"), Component.literal("Get a Magic Wand"),
+                        null, FrameType.TASK,
+                        true, true, false))
+                .parent(rootAdvancement)
+                .addCriterion("has_magic_wand", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.MAGIC_WAND.get()))
+                .save(saver, new ResourceLocation(AdvancedMC.MOD_ID, "a_magical_wand"), existingFileHelper);
     }
 }
