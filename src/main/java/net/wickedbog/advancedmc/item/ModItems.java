@@ -20,7 +20,7 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> MAGIC_WAND = ITEMS.register("magic_wand",
-            () -> new WandItem(new Item.Properties().durability(25)));
+            () -> new WandItem(new Item.Properties().durability(30)));
 
     public static final RegistryObject<Item> RUBY_HELMET = ITEMS.register("ruby_helmet",
             () -> new ArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.HELMET, new Item.Properties()));
