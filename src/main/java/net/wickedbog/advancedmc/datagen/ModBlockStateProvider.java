@@ -17,6 +17,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
         blockWithItem(ModBlocks.RUBY_BLOCK);
         blockWithItem(ModBlocks.RUBY_ORE);
+        blockWithItem(ModBlocks.BLUE_CRYSTAL);
+        blockWithItem(ModBlocks.GREEN_CRYSTAL);
+        blockWithItem(ModBlocks.RED_CRYSTAL);
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

@@ -1,7 +1,16 @@
-// 1.20.1	2024-04-01T11:18:18.6613087	Block States: advancedmc
+// 1.20.1	2024-04-02T14:58:11.8113582	Block States: advancedmc
+f8d782df6158d88b7b844adbd1d040a83b973f6c assets/advancedmc/blockstates/blue_crystal.json
+325f75f10ae8b3711e53089dfb6d90156c5418b5 assets/advancedmc/blockstates/green_crystal.json
+735d60f007402a3bd389a0bb188e8dd6f2e20a61 assets/advancedmc/blockstates/red_crystal.json
 d5c81e36a4d591917509ed33927d7bad89f598ab assets/advancedmc/blockstates/ruby_block.json
 583663b7b26efdb63242554181200ee9446359cd assets/advancedmc/blockstates/ruby_ore.json
+e2a33db0f2a4051b306857fa2979373e3c847004 assets/advancedmc/models/block/blue_crystal.json
+af37862a18fc0201847cb092357bfff08c99ea4c assets/advancedmc/models/block/green_crystal.json
+09a75bc3f5989fada899ceb4d670728642071e4a assets/advancedmc/models/block/red_crystal.json
 b56b4ed3ba4bc570a4a6e9083512a66ea1ff8cd5 assets/advancedmc/models/block/ruby_block.json
 acc993261b75bf8c04ffe6ddaf554e77f0b358a8 assets/advancedmc/models/block/ruby_ore.json
+f796d8575fc92da0aa596abfb5d214337db0c02d assets/advancedmc/models/item/blue_crystal.json
+bf300e6772bb4c816207aab31fb02cb15b3f3b1d assets/advancedmc/models/item/green_crystal.json
+56233516caf10fdb79db679ea02c04690ea408c3 assets/advancedmc/models/item/red_crystal.json
 66f45b41eff640fc5cf540e3c5ad453c96e26481 assets/advancedmc/models/item/ruby_block.json
 7952e79dc5c76a00f871ab0d528165d9abaf2773 assets/advancedmc/models/item/ruby_ore.json

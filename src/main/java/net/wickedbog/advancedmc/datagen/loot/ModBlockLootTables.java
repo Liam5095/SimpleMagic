@@ -25,6 +25,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     @Override
     protected void generate() {
         this.dropSelf(ModBlocks.RUBY_BLOCK.get());
+        this.dropSelf(ModBlocks.GREEN_CRYSTAL.get());
+        this.dropSelf(ModBlocks.BLUE_CRYSTAL.get());
+        this.dropSelf(ModBlocks.RED_CRYSTAL.get());
 
         this.add(ModBlocks.RUBY_ORE.get(),
                 block -> createRubyOreDrops(ModBlocks.RUBY_ORE.get(), ModItems.RAW_RUBY.get()));
