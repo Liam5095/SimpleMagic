@@ -17,7 +17,10 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.wickedbog.advancedmc.block.ModBlocks;
 import net.wickedbog.advancedmc.item.ModCreativeModeTabs;
 import net.wickedbog.advancedmc.item.ModItems;
+import net.wickedbog.advancedmc.worldgen.biome.ModTerrablender;
+import net.wickedbog.advancedmc.worldgen.biome.surface.ModSurfaceRules;
 import org.slf4j.Logger;
+import terrablender.api.SurfaceRuleManager;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(AdvancedMC.MOD_ID)
@@ -32,6 +35,8 @@ public class AdvancedMC {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModTerrablender.registerBiomes();
 
         modEventBus.addListener(this::commonSetup);
 
