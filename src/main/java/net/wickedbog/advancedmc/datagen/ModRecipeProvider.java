@@ -16,7 +16,7 @@ import java.util.function.Consumer;
 
 public class ModRecipeProvider extends RecipeProvider implements IConditionBuilder {
     private static final List<ItemLike> RUBY_SMELTABLES = List.of(ModItems.RAW_RUBY.get(),
-            ModBlocks.RUBY_ORE.get());
+            ModBlocks.RUBY_ORE.get(), ModBlocks.DEEPSLATE_RUBY_ORE.get());
 
     public ModRecipeProvider(PackOutput pOutput) {
         super(pOutput);

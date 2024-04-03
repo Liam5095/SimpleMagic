@@ -1,0 +1,36 @@
+{
+  "parent": "advancedmc:advancedmc",
+  "criteria": {
+    "test_criterion": {
+      "conditions": {
+        "item": {
+          "items": [
+            "advancedmc:ruby"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "Here i test the advancments"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "advancedmc:ruby"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "test"
+    }
+  },
+  "requirements": [
+    [
+      "test_criterion"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

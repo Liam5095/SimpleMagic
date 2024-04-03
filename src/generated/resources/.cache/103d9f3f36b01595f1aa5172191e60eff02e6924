@@ -1,0 +1,4 @@
+// 1.20.1	2024-04-03T17:33:46.9521521	Registries
+498ad4307316b5de77dca231be211e52b6e19a55 data/advancedmc/forge/biome_modifier/add_ruby_ore.json
+c74a51e834a83597ffe9acb33e020a5281a95e11 data/advancedmc/worldgen/configured_feature/ruby_ore.json
+1d212175b9ba8d6845796e1e81db9e86e59a9314 data/advancedmc/worldgen/placed_feature/ruby_ore_placed.json

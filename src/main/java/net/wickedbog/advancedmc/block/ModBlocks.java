@@ -26,6 +26,8 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> RUBY_ORE = registerBlock("ruby_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)));
+    public static final RegistryObject<Block> DEEPSLATE_RUBY_ORE = registerBlock("deepslate_ruby_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)));
 
     public static final RegistryObject<Block> BLUE_CRYSTAL = registerBlock("blue_crystal",
             () -> new Crystal(BlockBehaviour.Properties.copy(Blocks.GLASS).strength(1f).noOcclusion()));

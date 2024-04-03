@@ -10,6 +10,13 @@ public class ModFoods {
         .nutrition(2)
         .build(); //EXAMPLE
 
+    public static final FoodProperties TESTING = new FoodProperties.Builder()
+            .fast()
+            .alwaysEat()
+            .saturationMod(0f)
+            .nutrition(0)
+            .build();
+
     //THIS IS HOW TO USE IN ModItems
     //    public static final RegistryObject<Item> ITEM = ITEMS.register("item",
     //            () -> new Item(new Item.Properties().food(ModFoods.FOODPROPS)));

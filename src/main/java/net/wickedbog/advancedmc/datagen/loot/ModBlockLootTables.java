@@ -31,6 +31,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.add(ModBlocks.RUBY_ORE.get(),
                 block -> createRubyOreDrops(ModBlocks.RUBY_ORE.get(), ModItems.RAW_RUBY.get()));
+
+        this.add(ModBlocks.DEEPSLATE_RUBY_ORE.get(),
+                block -> createRubyOreDrops(ModBlocks.DEEPSLATE_RUBY_ORE.get(), ModItems.RAW_RUBY.get()));
     }
     protected LootTable.Builder createRubyOreDrops(Block pBlock, Item item) {
         return createSilkTouchDispatchTable(pBlock,

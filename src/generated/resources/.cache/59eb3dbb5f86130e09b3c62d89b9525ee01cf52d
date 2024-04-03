@@ -1,5 +1,6 @@
-// 1.20.1	2024-04-02T14:58:11.8092861	Loot Tables
+// 1.20.1	2024-04-03T17:25:54.0626553	Loot Tables
 048b10716585fed398d824b654fc8ba208649550 data/advancedmc/loot_tables/blocks/blue_crystal.json
+a34d18f1a717fc20921562eb34e2802d915f9f36 data/advancedmc/loot_tables/blocks/deepslate_ruby_ore.json
 0908b023944d8ac89af44433d6a1661c639f55ad data/advancedmc/loot_tables/blocks/green_crystal.json
 2cb416e98e209d7c12641aac5fd911e3265b3880 data/advancedmc/loot_tables/blocks/red_crystal.json
 d7d0240c77802264cf55e7f251484dd76e3df806 data/advancedmc/loot_tables/blocks/ruby_block.json

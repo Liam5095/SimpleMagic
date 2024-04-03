@@ -3,11 +3,12 @@ package net.wickedbog.advancedmc.datagen;
 import net.minecraft.advancements.Advancement;
 import net.minecraft.advancements.DisplayInfo;
 import net.minecraft.advancements.FrameType;
-import net.minecraft.advancements.critereon.InventoryChangeTrigger;
+import net.minecraft.advancements.critereon.*;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.common.data.ForgeAdvancementProvider;
 import net.wickedbog.advancedmc.AdvancedMC;
@@ -48,5 +49,14 @@ public class ModAdvancementProvider implements ForgeAdvancementProvider.Advancem
                 .parent(rootAdvancement)
                 .addCriterion("has_magic_wand", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.MAGIC_WAND.get()))
                 .save(saver, new ResourceLocation(AdvancedMC.MOD_ID, "a_magical_wand"), existingFileHelper);
+
+        Advancement TEST = Advancement.Builder.advancement()
+                .display(new DisplayInfo(new ItemStack(ModItems.RUBY.get()),
+                        Component.literal("test"), Component.literal("Here i test the advancments"),
+                        null, FrameType.TASK,
+                        true, true, false))
+                .parent(rootAdvancement)
+                .addCriterion("test_criterion", ConsumeItemTrigger.TriggerInstance.usedItem(ModItems.RUBY.get()))
+                .save(saver, new ResourceLocation(AdvancedMC.MOD_ID, "test_criterion"), existingFileHelper);
     }
 }
