@@ -25,6 +25,7 @@ public class ModCreativeModeTabs {
 
                         pOutput.accept(ModBlocks.RUBY_BLOCK.get());
                         pOutput.accept(ModBlocks.RUBY_ORE.get());
+                        pOutput.accept(ModBlocks.DEEPSLATE_RUBY_ORE.get());
                         pOutput.accept(ModBlocks.BLUE_CRYSTAL.get());
                         pOutput.accept(ModBlocks.GREEN_CRYSTAL.get());
                         pOutput.accept(ModBlocks.RED_CRYSTAL.get());

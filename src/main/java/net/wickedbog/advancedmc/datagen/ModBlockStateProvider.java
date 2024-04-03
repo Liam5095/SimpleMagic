@@ -20,6 +20,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.BLUE_CRYSTAL);
         blockWithItem(ModBlocks.GREEN_CRYSTAL);
         blockWithItem(ModBlocks.RED_CRYSTAL);
+        blockWithItem(ModBlocks.DEEPSLATE_RUBY_ORE);
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
