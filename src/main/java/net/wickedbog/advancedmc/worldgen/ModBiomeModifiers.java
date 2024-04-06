@@ -14,6 +14,7 @@ import net.wickedbog.advancedmc.AdvancedMC;
 
 public class ModBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_RUBY_ORE = registerKey("add_ruby_ore");
+    public static final ResourceKey<BiomeModifier> Add_CRYSTAL_GEODE = registerKey("add_crystal_geode");
     //public static final ResourceKey<BiomeModifier> ADD_NETHER_RUBY_ORE = registerKey("add_nether_ruby_ore");
     //public static final ResourceKey<BiomeModifier> ADD_END_RUBY_ORE = registerKey("add_end_ruby_ore");
 
@@ -26,6 +27,13 @@ public class ModBiomeModifiers {
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.RUBY_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES)); // BiomeTags.IS_OVERWORLD is the entire overworld you can also do BiomeTags for something else
+
+        context.register(Add_CRYSTAL_GEODE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.CRYSTAL_GEODE_PLACED_KEY)),
+                GenerationStep.Decoration.LOCAL_MODIFICATIONS
+        ));
+
         //Or you can do Biomes.BIOME for an exact biome!
 
         //context.register(ADD_NETHER_RUBY_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(

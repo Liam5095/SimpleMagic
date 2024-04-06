@@ -28,6 +28,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.GREEN_CRYSTAL.get());
         this.dropSelf(ModBlocks.BLUE_CRYSTAL.get());
         this.dropSelf(ModBlocks.RED_CRYSTAL.get());
+        this.dropSelf(ModBlocks.STEAM_VENT.get());
 
         this.add(ModBlocks.RUBY_ORE.get(),
                 block -> createRubyOreDrops(ModBlocks.RUBY_ORE.get(), ModItems.RAW_RUBY.get()));

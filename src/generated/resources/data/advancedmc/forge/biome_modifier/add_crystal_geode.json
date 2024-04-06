@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": "advancedmc:crystal_geode_placed_key",
+  "step": "local_modifications"
+}

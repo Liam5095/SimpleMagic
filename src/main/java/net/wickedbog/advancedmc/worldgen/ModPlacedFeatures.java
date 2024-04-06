@@ -8,16 +8,14 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
-import net.minecraft.world.level.levelgen.placement.HeightRangePlacement;
-import net.minecraft.world.level.levelgen.placement.HeightmapPlacement;
-import net.minecraft.world.level.levelgen.placement.PlacedFeature;
-import net.minecraft.world.level.levelgen.placement.PlacementModifier;
+import net.minecraft.world.level.levelgen.placement.*;
 import net.wickedbog.advancedmc.AdvancedMC;
 
 import java.util.List;
 
 public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> RUBY_ORE_PLACED_KEY = registerKey("ruby_ore_placed");
+    public static final ResourceKey<PlacedFeature> CRYSTAL_GEODE_PLACED_KEY = registerKey("crystal_geode_placed_key");
     public static final ResourceKey<PlacedFeature> NETHER_RUBY_ORE_PLACED_KEY = registerKey("nether_ruby_ore_placed"); // Nether example
     public static final ResourceKey<PlacedFeature> END_RUBY_ORE_PLACED_KEY = registerKey("end_ruby_ore_placed"); // End example
 
@@ -27,6 +25,12 @@ public class ModPlacedFeatures {
         register(context, RUBY_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_RUBY_ORE_KEY),
                 ModOrePlacement.commonOrePlacement(12, // Number of veins per chunk
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-50), VerticalAnchor.absolute(40)))); // Play around with
+
+        register(context, CRYSTAL_GEODE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_CRYSTAL_GEODE_KEY),
+                List.of(RarityFilter.onAverageOnceEvery(20), InSquarePlacement.spread(),
+                        HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(6), VerticalAnchor.absolute(50)),
+                        BiomeFilter.biome()));
+
         // heightrangeplacement watch here for more info https://www.youtube.com/watch?v=GRJyJWtSnvQ&list=PLKGarocXCE1H9Y21-pxjt5Pt8bW14twa-&index=38 10 minutes in
         // Also look at vanilla classes for more info!
 

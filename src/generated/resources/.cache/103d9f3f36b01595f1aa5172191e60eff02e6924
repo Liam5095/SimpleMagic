@@ -1,5 +1,8 @@
-// 1.20.1	2024-04-03T18:56:45.5863132	Registries
+// 1.20.1	2024-04-06T16:02:06.5192616	Registries
+37a043a5beedf73804aff83cea4ebf58f7b9c380 data/advancedmc/forge/biome_modifier/add_crystal_geode.json
 498ad4307316b5de77dca231be211e52b6e19a55 data/advancedmc/forge/biome_modifier/add_ruby_ore.json
 a341ae6e00951e8f1f7943fdc9c60e20ab1b358e data/advancedmc/worldgen/biome/test_biome.json
+386da2696ca7566b2ac10b62b2be84521c7d9202 data/advancedmc/worldgen/configured_feature/crystal_geode.json
 c74a51e834a83597ffe9acb33e020a5281a95e11 data/advancedmc/worldgen/configured_feature/ruby_ore.json
+3b1659c2538e94b28886510a87f880ccc1ff9fba data/advancedmc/worldgen/placed_feature/crystal_geode_placed_key.json
 1d212175b9ba8d6845796e1e81db9e86e59a9314 data/advancedmc/worldgen/placed_feature/ruby_ore_placed.json
