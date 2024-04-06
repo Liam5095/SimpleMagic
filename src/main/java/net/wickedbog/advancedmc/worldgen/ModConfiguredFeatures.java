@@ -26,8 +26,8 @@ public class ModConfiguredFeatures {
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplaceable = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
         RuleTest deepslateReplaceable = new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
-        //RuleTest netherrackReplaceables = new BlockMatchTest(Blocks.NETHERRACK);
-        //RuleTest endReplaceables = new BlockMatchTest(Blocks.END_STONE);
+        RuleTest netherrackReplaceables = new BlockMatchTest(Blocks.NETHERRACK);
+        RuleTest endReplaceables = new BlockMatchTest(Blocks.END_STONE);
 
         List<OreConfiguration.TargetBlockState> overworldRubyOres = List.of(OreConfiguration.target(stoneReplaceable,
                 ModBlocks.RUBY_ORE.get().defaultBlockState()),
