@@ -31,6 +31,15 @@ public class ModItems {
     public static final RegistryObject<Item> RUBY_BOOTS = ITEMS.register("ruby_boots",
             () -> new ArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.BOOTS, new Item.Properties()));
 
+    public static final RegistryObject<Item> COPPER_HELMET = ITEMS.register("copper_helmet",
+            () -> new ArmorItem(ModArmorMaterials.COPPER, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> COPPER_CHESTPLATE = ITEMS.register("copper_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.COPPER, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final RegistryObject<Item> COPPER_LEGGINGS = ITEMS.register("copper_leggings",
+            () -> new ArmorItem(ModArmorMaterials.COPPER, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final RegistryObject<Item> COPPER_BOOTS = ITEMS.register("copper_boots",
+            () -> new ArmorItem(ModArmorMaterials.COPPER, ArmorItem.Type.BOOTS, new Item.Properties()));
+
 
     public static void register(IEventBus eventBus)  {
         ITEMS.register(eventBus);

@@ -2,6 +2,7 @@ package net.wickedbog.advancedmc.datagen;
 
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
@@ -66,6 +67,38 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("R R")
                 .pattern("R R")
                 .define('R', ModItems.RUBY.get())
+                .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.COPPER_HELMET.get())
+                .pattern("CCC")
+                .pattern("C C")
+                .pattern("   ")
+                .define('C', Items.COPPER_INGOT)
+                .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.COPPER_CHESTPLATE.get())
+                .pattern("C C")
+                .pattern("CCC")
+                .pattern("CCC")
+                .define('C', Items.COPPER_INGOT)
+                .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.COPPER_LEGGINGS.get())
+                .pattern("CCC")
+                .pattern("C C")
+                .pattern("C C")
+                .define('C', Items.COPPER_INGOT)
+                .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.COPPER_BOOTS.get())
+                .pattern("   ")
+                .pattern("C C")
+                .pattern("C C")
+                .define('C', Items.COPPER_INGOT)
                 .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY.get()))
                 .save(pWriter);
 

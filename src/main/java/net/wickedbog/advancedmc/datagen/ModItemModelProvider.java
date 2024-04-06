@@ -47,6 +47,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.RUBY_CHESTPLATE);
         trimmedArmorItem(ModItems.RUBY_LEGGINGS);
         trimmedArmorItem(ModItems.RUBY_BOOTS);
+
+        trimmedArmorItem(ModItems.COPPER_HELMET);
+        trimmedArmorItem(ModItems.COPPER_CHESTPLATE);
+        trimmedArmorItem(ModItems.COPPER_LEGGINGS);
+        trimmedArmorItem(ModItems.COPPER_BOOTS);
     }
 
 

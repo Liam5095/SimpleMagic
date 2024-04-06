@@ -4,6 +4,8 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
+import net.minecraft.world.item.ArmorMaterials;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.wickedbog.advancedmc.AdvancedMC;
 
@@ -11,7 +13,9 @@ import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
     RUBY("ruby", 26, new int[]{5, 7, 5, 4}, 25,
-            SoundEvents.ARMOR_EQUIP_IRON, 1f, 0f, () -> Ingredient.of(ModItems.RUBY.get()));
+            SoundEvents.ARMOR_EQUIP_IRON, 1f, 0f, () -> Ingredient.of(ModItems.RUBY.get())),
+    COPPER("copper", 7, new int[]{2,5,6,3}, 14,
+            SoundEvents.ARMOR_EQUIP_GOLD, 1f, 0f, () -> Ingredient.of(Items.COPPER_INGOT));
 
     private final String name;
     private final int durabilityMultiplier;

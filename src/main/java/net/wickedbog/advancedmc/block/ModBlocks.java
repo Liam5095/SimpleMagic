@@ -13,6 +13,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.wickedbog.advancedmc.AdvancedMC;
 import net.wickedbog.advancedmc.block.custom.Crystal;
+import net.wickedbog.advancedmc.block.custom.SteamVents;
 import net.wickedbog.advancedmc.item.ModItems;
 
 import java.util.function.Supplier;
@@ -35,6 +36,9 @@ public class ModBlocks {
             () -> new Crystal(BlockBehaviour.Properties.copy(Blocks.GLASS).strength(1f).noOcclusion()));
     public static final RegistryObject<Block> GREEN_CRYSTAL = registerBlock("green_crystal",
             () -> new Crystal(BlockBehaviour.Properties.copy(Blocks.GLASS).strength(1f).noOcclusion()));
+
+    public static final RegistryObject<Block> STEAM_VENT = registerBlock("steam_vent",
+            () -> new SteamVents(BlockBehaviour.Properties.copy(Blocks.IRON_TRAPDOOR)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

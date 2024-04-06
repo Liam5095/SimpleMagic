@@ -35,6 +35,11 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.RUBY_LEGGINGS.get());
                         pOutput.accept(ModItems.RUBY_BOOTS.get());
 
+                        pOutput.accept(ModItems.COPPER_HELMET.get());
+                        pOutput.accept(ModItems.COPPER_CHESTPLATE.get());
+                        pOutput.accept(ModItems.COPPER_LEGGINGS.get());
+                        pOutput.accept(ModItems.COPPER_BOOTS.get());
+
                         pOutput.accept(Blocks.TNT);
                     })
                     .build());

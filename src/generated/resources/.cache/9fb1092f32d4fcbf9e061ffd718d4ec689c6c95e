@@ -1,4 +1,8 @@
-// 1.20.1	2024-04-03T17:30:18.975373	Recipes
+// 1.20.1	2024-04-03T19:56:41.2855228	Recipes
+4a895e8d56b1aab295b7d5b11824b4bfae17dd01 data/advancedmc/advancements/recipes/misc/copper_boots.json
+10c54fe4f0f055749befcf958d00d2b0ecd6c09e data/advancedmc/advancements/recipes/misc/copper_chestplate.json
+d8fb09ae1c4084bfbc868bddb02d1f2211f1800a data/advancedmc/advancements/recipes/misc/copper_helmet.json
+d0af7fa983476de1d675b2d056d988bf01caee1d data/advancedmc/advancements/recipes/misc/copper_leggings.json
 845ecbdc7fe59cf54c4cea3ee00d78e38652022d data/advancedmc/advancements/recipes/misc/ruby.json
 6b18a2a5e4b9197349dc29180b534631c1f34e4e data/advancedmc/advancements/recipes/misc/ruby_block.json
 adb6d356edabb378dd2d9677f32dcea06cfe966a data/advancedmc/advancements/recipes/misc/ruby_boots.json
@@ -11,6 +15,10 @@ b3ad8f14556bea1c3b3d3d790454d6a6b8f8d678 data/advancedmc/advancements/recipes/mi
 e3734cea16302a4aa89d4f8ce9d8d184c0058bf4 data/advancedmc/advancements/recipes/misc/ruby_from_smelting_ruby_ore.json
 202f8d934a000b60b3686fd82063772c8a90cfd4 data/advancedmc/advancements/recipes/misc/ruby_helmet.json
 ea84befd0c68cdb1ee99a7a5fb4129bf171a39fa data/advancedmc/advancements/recipes/misc/ruby_leggings.json
+86c055d9acb826c842132e54a10c673d8b39a213 data/advancedmc/recipes/copper_boots.json
+b41983d6f04f6ab1413af70bfaeb984486faab2f data/advancedmc/recipes/copper_chestplate.json
+16b406df5f20b7bb7e2c7310b9a629cceb646df3 data/advancedmc/recipes/copper_helmet.json
+e58756f0dd628b04d34440b909e5a49c06a61bc0 data/advancedmc/recipes/copper_leggings.json
 e6514421c3e4ddecf84bf1087b52e8889c187ddc data/advancedmc/recipes/ruby.json
 f23d2ae9027217b40455bb09f5156772dd79b0c1 data/advancedmc/recipes/ruby_block.json
 29eac645fdc3a875e1613d1010dac43992bdc4e3 data/advancedmc/recipes/ruby_boots.json
