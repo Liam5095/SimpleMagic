@@ -42,19 +42,33 @@ public class ModConfiguredFeatures {
 
         register(context, OVERWORLD_RUBY_ORE_KEY, Feature.ORE, new OreConfiguration(overworldRubyOres, 4)); // Size is vein size! OVERWORLD
 
-        register(context, OVERWORLD_CRYSTAL_GEODE_KEY, Feature.GEODE,
-                new GeodeConfiguration(new GeodeBlockSettings(BlockStateProvider.simple(Blocks.AIR),
-                        BlockStateProvider.simple(Blocks.DEEPSLATE),
-                        BlockStateProvider.simple(ModBlocks.RED_CRYSTAL.get()),
-                        BlockStateProvider.simple(ModBlocks.GREEN_CRYSTAL.get()),
-                        BlockStateProvider.simple(ModBlocks.BLUE_CRYSTAL.get()),
-                        List.of(ModBlocks.RED_CRYSTAL.get().defaultBlockState()),
-                        BlockTags.FEATURES_CANNOT_REPLACE , BlockTags.GEODE_INVALID_BLOCKS),
-                        new GeodeLayerSettings(1.7D, 1.2D, 2.5D, 3.5D),
-                        new GeodeCrackSettings(0.25D, 1.5D, 1), 0.5D, 0.1D,
-                        true, UniformInt.of(3, 8),
-                        UniformInt.of(2, 6), UniformInt.of(1, 2),
-                        -18, 18, 0.075D, 1));
+        //register(context, OVERWORLD_CRYSTAL_GEODE_KEY, Feature.GEODE,
+        //        new GeodeConfiguration(new GeodeBlockSettings(BlockStateProvider.simple(Blocks.AIR),
+        //                BlockStateProvider.simple(Blocks.DEEPSLATE),
+        //                BlockStateProvider.simple(ModBlocks.RED_CRYSTAL.get()),
+        //                BlockStateProvider.simple(ModBlocks.GREEN_CRYSTAL.get()),
+        //                BlockStateProvider.simple(ModBlocks.BLUE_CRYSTAL.get()),
+        //                List.of(ModBlocks.RED_CRYSTAL.get().defaultBlockState()),
+        //                BlockTags.FEATURES_CANNOT_REPLACE , BlockTags.GEODE_INVALID_BLOCKS),
+        //                new GeodeLayerSettings(1.0D, 2.2D, 3.2D, 4.7D),
+        //                new GeodeCrackSettings(0.95D, 2.3D, 2), 1.0D, 0.007D,
+        //                true, UniformInt.of(4, 6),
+        //                UniformInt.of(3, 4), UniformInt.of(2, 4),
+        //                -28, 28, 0.09D, 1));
+
+                register(context, OVERWORLD_CRYSTAL_GEODE_KEY, Feature.GEODE,
+                        new GeodeConfiguration(new GeodeBlockSettings(BlockStateProvider.simple(Blocks.AIR),
+                                BlockStateProvider.simple(ModBlocks.GREEN_CRYSTAL.get()),
+                                BlockStateProvider.simple(ModBlocks.RED_CRYSTAL.get()),
+                                BlockStateProvider.simple(ModBlocks.BLUE_CRYSTAL.get()),
+                                BlockStateProvider.simple(Blocks.DEEPSLATE),
+                                List.of(ModBlocks.RED_CRYSTAL.get().defaultBlockState()),
+                                BlockTags.FEATURES_CANNOT_REPLACE , BlockTags.GEODE_INVALID_BLOCKS),
+                                new GeodeLayerSettings(1.7D, 1.2D, 1.5D, 1.2D),
+                                new GeodeCrackSettings(0.25D, 1.5D, 1), 0.5D, 0.1D,
+                                true, UniformInt.of(3, 8),
+                                UniformInt.of(2, 6), UniformInt.of(1, 2),
+                                -26, 26, 0.05D, 1));
 
         //register(context, NETHER_RUBY_ORE_KEY, Feature.ORE, new OreConfiguration(netherrackReplaceables,
         // ModBlocks.NETHERORE.get().defaultBlockState(), 4)); NETHER ORE EXAMPLE

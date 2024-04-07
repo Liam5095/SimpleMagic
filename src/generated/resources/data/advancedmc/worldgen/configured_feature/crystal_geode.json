@@ -18,10 +18,7 @@
       "inner_layer_provider": {
         "type": "minecraft:simple_state_provider",
         "state": {
-          "Name": "minecraft:deepslate",
-          "Properties": {
-            "axis": "y"
-          }
+          "Name": "advancedmc:green_crystal"
         }
       },
       "inner_placements": [
@@ -33,13 +30,16 @@
       "middle_layer_provider": {
         "type": "minecraft:simple_state_provider",
         "state": {
-          "Name": "advancedmc:green_crystal"
+          "Name": "advancedmc:blue_crystal"
         }
       },
       "outer_layer_provider": {
         "type": "minecraft:simple_state_provider",
         "state": {
-          "Name": "advancedmc:blue_crystal"
+          "Name": "minecraft:deepslate",
+          "Properties": {
+            "axis": "y"
+          }
         }
       }
     },
@@ -59,12 +59,12 @@
     "layers": {
       "filling": 1.7,
       "inner_layer": 1.2,
-      "middle_layer": 2.5,
-      "outer_layer": 3.5
+      "middle_layer": 1.5,
+      "outer_layer": 1.2
     },
-    "max_gen_offset": 18,
-    "min_gen_offset": -18,
-    "noise_multiplier": 0.075,
+    "max_gen_offset": 26,
+    "min_gen_offset": -26,
+    "noise_multiplier": 0.05,
     "outer_wall_distance": {
       "type": "minecraft:uniform",
       "value": {
